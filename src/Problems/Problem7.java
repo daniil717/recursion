@@ -2,7 +2,7 @@ package Problems;
 
 import java.util.Scanner;
 public class Problem7 {
-    public static void main(String[] args) {
+    public static void solve() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("enter n:");
