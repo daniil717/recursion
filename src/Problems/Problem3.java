@@ -14,17 +14,23 @@ public class Problem3 {
         scanner.close();
         }
     }
+    //method to check whether a number is prime or not
     public static boolean isPrime(int n) {
         if (n <= 1)
             return false;
+        //Calling a helper method to recursively test a number for primality
         return isPrimeUtil(n, 2);
     }
 
+    //a helper method to recursively test a number for primality
     private static boolean isPrimeUtil(int n, int i) {
-        if (i == n)
+        if (i == n) {
             return true;
-        if (n % i == 0)
+        }
+        if (n % i == 0) {
             return false;
+        }
+        //checking division by next number using recursive call
         return isPrimeUtil(n, i + 1);
     }
 }

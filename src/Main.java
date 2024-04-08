@@ -3,13 +3,18 @@ import Problems.*;
 
 public class Main {
     public static void main(String[] args) {
+        //create an object to contain users input
         Scanner scanner = new Scanner(System.in);
+        //running for tracking the program's performance
         boolean running = true;
 
         while (running) {
             System.out.println("Choose the number of task:");
+            //contain users choice
             int choice = scanner.nextInt();
 
+            /*Selecting a task depending on the entered number
+            performing each task depending on its number*/
             switch (choice) {
                 case 1:
                     Problem1.solve();
@@ -41,11 +46,14 @@ public class Main {
                 case 10:
                     Problem10.solve();
                     break;
+                    //if input is not 1 - 10 print "Invalid choice"
                 default:
                     System.out.println("Invalid choice");
             }
+            //shutting down the program after completing the selected task
             running = false;
         }
+        //To avoid resource leakage, close Scanner
         scanner.close();
     }
 }
