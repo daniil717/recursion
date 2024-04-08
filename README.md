@@ -1,0 +1,1 @@
+this code is intended so that the user can select the task that he needs to solve (out of 10 proposed) and get an answer. The code contains class main and package probems with codes for solving all 10 tasks
