@@ -46,6 +46,9 @@ public class Main {
                 case 10:
                     Problem10.solve();
                     break;
+                case 11:
+                    Problem11.solve();
+                    break;
                     //if input is not 1 - 10 print "Invalid choice"
                 default:
                     System.out.println("Invalid choice");
